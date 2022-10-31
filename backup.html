@@ -1,207 +1,109 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>Screens Chronology Step-by-Step </title>
-  <script src="https://unpkg.com/popper.js@1"></script>
-  <script src="https://unpkg.com/tippy.js@5"></script>
- </head>
-
- <body style="background-image: url(./background.png)">
-    
-  <ul class="all" style="
-  font-size: 12px;
-  padding-inline-start: 30px;
-  font-family: Helvetica;
-  margin-block-start: 25px;
-">
-    <li><b>/lib</b>
-        <ul>
-            <li>injection_container.dart [135+136, 138]</li>
-            <li>main.dart [137, 139, 141, 142]</li>
-            <li><b>/core</b>
-                <ul>
-                    <li><b>/error</b>
-                        <ul>
-                            <li>exceptions.dart [37]</li>
-                            <li>failures.dart [2, 38]</li>
-                        </ul>
-                    </li>
-                    <li><b>/network</b>
-                        <ul>
-                            <li>network_info.dart [35, 64, 66✅, 67✅, 69✅]</li>
-                        </ul>
-                    </li>                    
-                    <li><b>/usecases</b>
-                        <ul>
-                            <li>usecase.dart [9, 20]</li>
-                        </ul>
-                    </li>
-                    <li><b>/util</b>
-                        <ul>
-                            <li>input_converter.dart [99, 102✅, 104✅, 106✅]</li>
-                        </ul>
-                    </li>  
-                </ul>
-            </li>
-            <li><b>/features</b>
-                <ul>
-                    <li><b>/number_trivia</b>
-                        <ul>
-                            <li><b>/data</b>
-                                <ul>
-                                   <li><b>/datasources</b>
-                                        <ul>
-                                            <li>number_trivia_local_data_source.dart [39, 71, 75✅, 76, 79✅, 81✅, 82✅]</li>
-                                            <li>number_trivia_remote_data_source.dart [36, 84, 86✅, 88✅, 90✅, 95✅, 96✅]</li>
-                                        </ul>
-                                   </li>
-                                   <li><b>/models</b>
-                                        <ul>
-                                            <li>number_trivia_model.dart [22, 28✅, 30⛔️, 31✅, 33✅]</li>
-                                        </ul>
-                                   </li>
-                                   <li><b>/repositories</b>
-                                        <ul>
-                                            <li>number_trivia_repository_impl.dart [34, 41, 43✅, 45⛔️, 48✅, 50✅, 52✅, 54✅, 60✅, 61✅, 62✅]</li>
-                                        </ul>
-                                   </li>   
-                                </ul>
-                            </li>
-                            <li><b>/domain</b>
-                                <ul>
-                                    <li><b>/entities</b>
-                                        <ul>
-                                            <li>number_trivia.dart [1]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/repositories</b>
-                                        <ul>
-                                            <li>number_trivia_repository.dart [3]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/usecases</b>
-                                        <ul>
-                                            <li>get_concrete_number_trivia.dart [5, 7✅, 8-1✅, 10, 11, 13]</li>
-                                            <li>get_random_number_trivia.dart [16, 18, 19]</li>
-                                        </ul>
-                                    </li>   
-                                </ul>
-                            </li>
-                            <li><b>/presentation</b>
-                                <ul>
-                                    <li><b>/bloc</b>
-                                        <ul>
-                                            <li>bloc.dart <small>(only export file in folder)</small></li>
-                                            <li>number_trivia_bloc.dart [108, 109, 114⛔️, 116, 119✅, 121✅, 125✅, 127✅, 129✅, 130✅, 133✅, 134✅]</li>
-                                            <li>number_trivia_event.dart [97, 98, 100]</li>
-                                            <li>number_trivia_state.dart [107]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/pages</b>
-                                        <ul>
-                                            <li>number_trivia_page.dart [140, 143, 144, 145, 146, 147, 148, 149+150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 181]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/widgets</b>
-                                        <ul>
-                                            <li>loading_widget.dart [164]</li>
-                                            <li>message_display.dart [163]</li>
-                                            <li>trivia_controls.dart [179, 180]</li>
-                                            <li>trivia_display.dart [165]</li>
-                                            <li>widgets.dart [162]</li>
-                                        </ul>
-                                    </li>   
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li><b>/test</b>
-        <ul>
-            <li><b>/core</b>
-                <ul>
-                    <li><b>/network</b>
-                        <ul>
-                            <li>network_info_test.dart [63, 65⛔️, 68⛔️]</li>
-                        </ul>
-                    </li>                    
-                    <li><b>/util</b>
-                        <ul>
-                            <li>input_converter_test.dart [101⛔️, 103⛔️, 105⛔️]</li>
-                        </ul>
-                    </li>  
-                </ul>
-            </li>
-            <li><b>/features</b>
-                <ul>
-                    <li><b>/number_trivia</b>
-                        <ul>
-                            <li><b>/data</b>
-                                <ul>
-                                    <li><b>/datasources</b>
-                                        <ul>
-                                            <li>number_trivia_local_data_source_test.dart [70, 72, 74⛔️, 77✅, 78⛔️, 80⛔️]</li>
-                                            <li>number_trivia_remote_data_source_test.dart [83, 85⛔️, 87, 89⛔️, 91, 92, 93, 94⛔️]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/models</b>
-                                        <ul>
-                                            <li>number_trivia_model_test.dart [21⛔️, 23✅, 27, 29⛔️, 32⛔️]</li>
-                                        </ul>
-                                    </li>
-                                    <li><b>/repositories</b>
-                                        <ul>
-                                            <li>number_trivia_repository_impl_test.dart [40, 42⛔️, 44⛔️, 46✅, 47⛔️, 49⛔️, 51⛔️, 53⛔️, 55, 56, 57, 58, 59⛔️]</li>
-                                        </ul>
-                                    </li>   
-                                </ul>
-                            </li>
-                            <li><b>/domain</b>
-                                <ul>
-                                    <li><b>/usecases</b>
-                                        <ul>
-                                            <li>get_concrete_number_trivia_test.dart [4, 6, 8, 12, 14]</li>
-                                            <li>get_random_number_trivia_test.dart [15, 17]</li>
-                                        </ul>
-                                    </li>   
-                                </ul>
-                            </li>
-                            <li><b>/presentation</b>
-                                <ul>
-                                    <li><b>/bloc</b>
-                                        <ul>
-                                            <li>number_trivia_bloc_test.dart [110, 111, 112✅, 113⛔️, 115✅,  117⛔️, 118, 120⛔️, 122, 123✅, 124⛔️, 126⛔️, 128⛔️, 131+132⛔️]</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </li>
-            <li><b>/fixtures</b>
-                <ul>
-                    <li>fixture_reader.dart [26]</li>
-                    <li>trivia_cached.json [73]</li>
-                    <li>trivia_double.json [25]</li>
-                    <li>trivia.json [24]</li>
-
-                </ul>
-            </li>
-        </ul>
-
-    </li>
-  </ul>
-
-  <script>
-      tippy('span');
-
-
-  </script>
- </body>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <title>Privacy Policy</title>
+      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+    </head>
+    <body>
+    <strong>Privacy Policy</strong> <p>
+                  Aleksandr V built the ZAS Driver app as
+                  a Free app. This SERVICE is provided by
+                  Aleksandr V at no cost and is intended for use as
+                  is.
+                </p> <p>
+                  This page is used to inform visitors regarding my
+                  policies with the collection, use, and disclosure of Personal
+                  Information if anyone decided to use my Service.
+                </p> <p>
+                  If you choose to use my Service, then you agree to
+                  the collection and use of information in relation to this
+                  policy. The Personal Information that I collect is
+                  used for providing and improving the Service. I will not use or share your information with
+                  anyone except as described in this Privacy Policy.
+                </p> <p>
+                  The terms used in this Privacy Policy have the same meanings
+                  as in our Terms and Conditions, which are accessible at
+                  ZAS Driver unless otherwise defined in this Privacy Policy.
+                </p> <p><strong>Information Collection and Use</strong></p> <p>
+                  For a better experience, while using our Service, I
+                  may require you to provide us with certain personally
+                  identifiable information. The information that
+                  I request will be retained on your device and is not collected by me in any way.
+                </p> <div><p>
+                    The app does use third-party services that may collect
+                    information used to identify you.
+                  </p> <p>
+                    Link to the privacy policy of third-party service providers used
+                    by the app
+                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
+                  I want to inform you that whenever you
+                  use my Service, in a case of an error in the app
+                  I collect data and information (through third-party
+                  products) on your phone called Log Data. This Log Data may
+                  include information such as your device Internet Protocol
+                  (“IP”) address, device name, operating system version, the
+                  configuration of the app when utilizing my Service,
+                  the time and date of your use of the Service, and other
+                  statistics.
+                </p> <p><strong>Cookies</strong></p> <p>
+                  Cookies are files with a small amount of data that are
+                  commonly used as anonymous unique identifiers. These are sent
+                  to your browser from the websites that you visit and are
+                  stored on your device's internal memory.
+                </p> <p>
+                  This Service does not use these “cookies” explicitly. However,
+                  the app may use third-party code and libraries that use
+                  “cookies” to collect information and improve their services.
+                  You have the option to either accept or refuse these cookies
+                  and know when a cookie is being sent to your device. If you
+                  choose to refuse our cookies, you may not be able to use some
+                  portions of this Service.
+                </p> <p><strong>Service Providers</strong></p> <p>
+                  I may employ third-party companies and
+                  individuals due to the following reasons:
+                </p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>
+                  I want to inform users of this Service
+                  that these third parties have access to their Personal
+                  Information. The reason is to perform the tasks assigned to
+                  them on our behalf. However, they are obligated not to
+                  disclose or use the information for any other purpose.
+                </p> <p><strong>Security</strong></p> <p>
+                  I value your trust in providing us your
+                  Personal Information, thus we are striving to use commercially
+                  acceptable means of protecting it. But remember that no method
+                  of transmission over the internet, or method of electronic
+                  storage is 100% secure and reliable, and I cannot
+                  guarantee its absolute security.
+                </p> <p><strong>Links to Other Sites</strong></p> <p>
+                  This Service may contain links to other sites. If you click on
+                  a third-party link, you will be directed to that site. Note
+                  that these external sites are not operated by me.
+                  Therefore, I strongly advise you to review the
+                  Privacy Policy of these websites. I have
+                  no control over and assume no responsibility for the content,
+                  privacy policies, or practices of any third-party sites or
+                  services.
+                </p> <p><strong>Children’s Privacy</strong></p> <div><p>
+                    These Services do not address anyone under the age of 13.
+                    I do not knowingly collect personally
+                    identifiable information from children under 13 years of age. In the case
+                    I discover that a child under 13 has provided
+                    me with personal information, I immediately
+                    delete this from our servers. If you are a parent or guardian
+                    and you are aware that your child has provided us with
+                    personal information, please contact me so that
+                    I will be able to do the necessary actions.
+                  </p></div> <!----> <p><strong>Changes to This Privacy Policy</strong></p> <p>
+                  I may update our Privacy Policy from
+                  time to time. Thus, you are advised to review this page
+                  periodically for any changes. I will
+                  notify you of any changes by posting the new Privacy Policy on
+                  this page.
+                </p> <p>This policy is effective as of 2022-10-31</p> <p><strong>Contact Us</strong></p> <p>
+                  If you have any questions or suggestions about my
+                  Privacy Policy, do not hesitate to contact me at app@zaslogistica.com.
+                </p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank" rel="noopener noreferrer">privacypolicytemplate.net </a>and modified/generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+    </body>
 </html>
